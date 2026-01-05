@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Responsive Calculator — David Chukwunonye Osigwe</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="app" role="application" aria-label="Calculator">
+    <h1 class="sr-only">Responsive Calculator</h1>
+
+    <div class="calculator" aria-hidden="false">
+      <div class="display" id="display" role="textbox" aria-live="polite" aria-label="Calculator display">0</div>
+      <div class="buttons" role="group" aria-label="Calculator buttons">
+        <button class="btn func" data-action="clear" aria-label="All clear">AC</button>
+        <button class="btn func" data-action="delete" aria-label="Delete">DEL</button>
+        <button class="btn func" data-action="percent" aria-label="Percent">%</button>
+        <button class="btn op" data-action="/" aria-label="Divide">÷</button>
+
+        <button class="btn" data-action="7">7</button>
+        <button class="btn" data-action="8">8</button>
+        <button class="btn" data-action="9">9</button>
+        <button class="btn op" data-action="*" aria-label="Multiply">×</button>
+
+        <button class="btn" data-action="4">4</button>
+        <button class="btn" data-action="5">5</button>
+        <button class="btn" data-action="6">6</button>
+        <button class="btn op" data-action="-" aria-label="Subtract">−</button>
+
+        <button class="btn" data-action="1">1</button>
+        <button class="btn" data-action="2">2</button>
+        <button class="btn" data-action="3">3</button>
+        <button class="btn op" data-action="+" aria-label="Add">+</button>
+
+        <button class="btn zero" data-action="0">0</button>
+        <button class="btn" data-action=".">.</button>
+        <button class="btn equal" data-action="=" aria-label="Equals">=</button>
+      </div>
+    </div>
+
+    <footer class="credits">
+      <small>Built by David Chukwunonye Osigwe • HTML • CSS • JavaScript</small>
+    </footer>
+  </main>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
